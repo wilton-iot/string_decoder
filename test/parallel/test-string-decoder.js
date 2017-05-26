@@ -1,10 +1,11 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 var bufferShim = require('safe-buffer').Buffer;
-require('../common');
+require('string_decoder/common');
 var assert = require('assert');
 var inspect = require('util').inspect;
-var StringDecoder = require('../../').StringDecoder;
+var StringDecoder = require('string_decoder/../').StringDecoder;
 
 // Test default encoding
 var decoder = new StringDecoder();
@@ -171,3 +172,5 @@ function writeSequences(length, start, sequence) {
   }
   return sequences;
 }
+
+return module.exports;});

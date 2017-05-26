@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 module.exports.all = [
     [
         /require\(['"]string_decoder['"]\)/g
@@ -60,3 +61,5 @@ module.exports['test-string-decoder.js'] = [
       , ''
     ]
 ]
+
+return module.exports;});

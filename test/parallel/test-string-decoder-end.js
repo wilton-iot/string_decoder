@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 var bufferShim = require('safe-buffer').Buffer;
@@ -5,9 +6,9 @@ var bufferShim = require('safe-buffer').Buffer;
 // the whole buffer at once, and that both match the .toString(enc)
 // result of the entire buffer.
 
-require('../common');
+require('string_decoder/common');
 var assert = require('assert');
-var SD = require('../../').StringDecoder;
+var SD = require('string_decoder/../').StringDecoder;
 var encodings = ['base64', 'hex', 'utf8', 'utf16le', 'ucs2'];
 
 var bufs = ['☃💩', 'asdf'].map(function (b) {
@@ -58,3 +59,5 @@ function testBuf(encoding, buf) {
   assert.strictEqual(res1, res3, 'one byte at a time should match toString');
   assert.strictEqual(res2, res3, 'all bytes at once should match toString');
 }
+
+return module.exports;});

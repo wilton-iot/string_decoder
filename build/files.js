@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 /* This file lists the files to be fetched from the node repo
  * in the /lib/ directory which will be placed in the ../lib/
  * directory after having each of the "replacements" in the
@@ -75,3 +76,5 @@ module.exports['string_decoder.js'] = [
     ]
 
 ]
+
+return module.exports;});

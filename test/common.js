@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 require('babel-polyfill'); /* eslint-disable required-modules */
 'use strict';
 var path = require('path');
@@ -581,3 +582,5 @@ exports.expectsError = function expectsError(_ref) {
     return true;
   };
 };
+
+return module.exports;});
