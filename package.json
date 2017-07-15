@@ -24,5 +24,11 @@
     "browser",
     "browserify"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "wilton": {
+    "excludes": [
+      "build",
+      "test"
+    ]
+  }
 }
