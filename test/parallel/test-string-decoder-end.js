@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 
 var bufferShim = require('safe-buffer').Buffer;
@@ -60,4 +60,4 @@ function testBuf(encoding, buf) {
   assert.strictEqual(res2, res3, 'all bytes at once should match toString');
 }
 
-return module.exports;});
+require = requireOrig;});

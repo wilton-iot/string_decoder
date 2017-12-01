@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 require('babel-polyfill'); /* eslint-disable required-modules */
 'use strict';
 var path = require('path');
@@ -583,4 +583,4 @@ exports.expectsError = function expectsError(_ref) {
   };
 };
 
-return module.exports;});
+require = requireOrig;});
